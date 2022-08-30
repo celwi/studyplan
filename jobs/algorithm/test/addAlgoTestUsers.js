@@ -21,7 +21,7 @@ module.exports.addAlgoTestUsers = async () => {
   console.log(util.inspect(config, false, null, true));
 
   //get semester
-  const semester = await Semester.findOne({ name: "SoSe22" });
+  const semester = await Semester.findOne({ name: "WiSe22/23" });
   const correctSemester = await Semester.findOne({ name: "SoSe20" });
 
   //seed Math.random()

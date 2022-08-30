@@ -24,7 +24,7 @@ mongoose
 async function seedStage() {
   await Stage.deleteMany({});
 
-  const sem = await Semester.findOne({ name: "SoSe22" });
+  const sem = await Semester.findOne({ name: "WiSe22/23" });
 
   let result = await Stage.create({
     //Date and time in UTC means berlin-time -1h
@@ -32,8 +32,8 @@ async function seedStage() {
     nextDates: {
       idle: [{ date: "2022-01-01" }],
       courseSelection: [{ date: "2022-03-13T23:00:00Z" }],
-      evaluation: [{ date: "2022-04-15" }],
-      courseResult: [{ date: "2022-04-22T14:00:00Z" }],
+      evaluation: [{ date: "2022-10-15" }],
+      courseResult: [{ date: "2022-10-22T14:00:00Z" }],
     },
     currentSemester: sem._id,
   });

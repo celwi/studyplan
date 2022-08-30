@@ -24,7 +24,7 @@ mongoose
 async function seedModalCourses() {
   await ModalCourse.deleteMany({});
 
-  const sem = await Semester.findOne({ name: "SoSe22" });
+  const sem = await Semester.findOne({ name: "WiSe22/23" });
 
   for (let course of modalCourseData) {
     course.reasonsForSelection = {
