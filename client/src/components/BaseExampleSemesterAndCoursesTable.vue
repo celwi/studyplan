@@ -105,6 +105,8 @@ $htwGruen: #76b900;
   .shadowBox {
     box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.23);
     border-radius: 20px;
+    border-left: 1px solid #76b900;
+    border-right: 1px solid #76b900;
   }
 
   .semesterRow {
@@ -113,12 +115,17 @@ $htwGruen: #76b900;
     grid-template-columns: 0.2fr 0.8fr;
     background: white;
     row-gap: 0px;
-
+    border-bottom: 1px solid #76b900;
     &:nth-child(odd) {
       background: rgba(118, 185, 0, 0.1);
+      border-bottom: 1px solid #76b900;
+    }
+    &:nth-child(even) {
+      border-bottom: 1px solid #76b900;
     }
     &:first-of-type {
       border-radius: 20px 20px 0 0;
+      border-top: 1px solid #76b900;
     }
     &:last-of-type {
       border-radius: 0 0 20px 20px;
@@ -135,7 +142,11 @@ $htwGruen: #76b900;
         font-size: 18px;
         padding: 10px;
         font-weight: bold;
-        color: $htwGruen;
+        color: black;
+        text-decoration: underline 2px;
+        text-decoration-color: $htwGruen ;
+        text-underline-offset: 4px ;
+        
       }
       p {
         margin: 0;
@@ -163,7 +174,7 @@ $htwGruen: #76b900;
         &-content-container {
           border-radius: 14px;
           position: relative;
-          background: rgba(190, 235, 174, 1);
+          background: rgba(118, 185, 0, 1);
           min-height: 87px;
           width: 100%;
           display: flex;
@@ -172,7 +183,7 @@ $htwGruen: #76b900;
           transition: 0.2s;
 
           &:hover {
-            background: rgba(190, 235, 174, 0.75);
+            background: rgba(118, 185, 0, 0.75);
           }
 
           &-content {

@@ -316,7 +316,8 @@ export default {
   position: relative;
   width: 150px;
   border-radius: 20px;
-  background: #c4c4c4;
+  border: 2px solid #76b900;
+  background: white;
   color: black;
   text-align: center;
   padding: 10px 20px;
@@ -357,7 +358,7 @@ export default {
   -moz-border-radius: 10;
   border-radius: 10px;
   font-family: Arial;
-  color: #ffffff;
+  color: black;
   font-size: 1rem;
   background: #76b900;
   padding: 5px 20px;

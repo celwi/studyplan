@@ -134,7 +134,7 @@ export default {
 
 <style lang="scss" scoped>
 $htwGruen: #76b900;
-$belegtBackground: rgba(253, 177, 62, 0.55);
+$belegtBackground: #ff9e66;
 
 .semesterRow {
   max-width: 100%;
@@ -178,27 +178,27 @@ $belegtBackground: rgba(253, 177, 62, 0.55);
           margin: 0 auto;
           width: 100%;
           min-height: 87px;
-          background: rgba(193, 193, 193, 0.55);
+          background: rgba(193, 193, 193, 0.3);
           background-size: 100px 100px;
-          border: 1px solid rgba(193, 193, 193, 0.3);
+          border: 2px solid rgba(193, 193, 193, 0.3);
           border-radius: 14px;
           &:hover {
-            background: rgba(193, 193, 193, 0.7);
+            background: #AFAFAF;
           }
 
           &--booked {
             background-color: $belegtBackground !important;
-            border: 1px solid rgba(253, 177, 62, 0.3);
+            border: 2px solid #ff5f01;
             &:hover {
-              background-color: rgba(253, 177, 62, 0.7) !important;
+              background-color: #ff5f01 !important;
             }
           }
 
           &--passed {
             background-color: rgba(118, 185, 0, 0.45) !important;
-            border: 1px solid rgba(118, 185, 0, 0.3);
+            border: 2px solid $htwGruen;
             &:hover {
-              background-color: rgba(118, 185, 0, 0.7) !important;
+              background-color: $htwGruen !important;
             }
           }
 

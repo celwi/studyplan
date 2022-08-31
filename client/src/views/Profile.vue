@@ -102,7 +102,10 @@ $htwGruen: #76b900;
 .changePassword {
   margin-bottom: 40px;
   a {
-    color: $htwGruen;
+    color:  black;
+    text-decoration: underline 2px;
+    text-decoration-color: $htwGruen ;
+    text-underline-offset: 4px ;;
     font-size: 20px;
   }
 }

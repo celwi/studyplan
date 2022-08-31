@@ -213,6 +213,9 @@ sup {
       margin-left: 15px;
       text-decoration: none;
       font-size: 18px;
+      padding:5px;
+      border: 3px solid white;
+      border-radius: 5px;
     }
 
     .icon {
@@ -222,12 +225,13 @@ sup {
   }
 
   .router-link-active {
-    color: $htwGruen !important;
-    text-decoration: underline !important;
+    border: 3px solid $htwGruen;
+    border-radius: 5px;
+    text-decoration: underline;
   }
 
   a {
-    color: #3d3d3d !important;
+    color: black !important;
   }
 }
 

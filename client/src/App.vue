@@ -27,6 +27,7 @@ export default({
 </script>
 
 <style lang="scss">
+$htwGruen: #76b900;
 html {
   overflow-x: hidden;
 }
@@ -41,7 +42,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #3d3d3d;
+  color: black;
   position: relative;
   min-height: 100vh;
   width: 100vw;
@@ -61,6 +62,6 @@ body {
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: $htwGruen;
 }
 </style>

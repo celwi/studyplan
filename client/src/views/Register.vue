@@ -1,9 +1,9 @@
 <template>
   <div>
     <h1>Willkommen zu deinem Studyplan!</h1>
+    <div v-if="!successful" class="line"></div>
     <h2 v-if="!successful">Plane dein Studium und behalte den Überblick!</h2>
     <h3 v-if="!successful">Registriere dich</h3>
-    <div v-if="!successful" class="line"></div>
     <form name="form" @submit.prevent="handleRegister">
       <div v-if="!successful">
         <div>
@@ -205,6 +205,7 @@ label {
   width: 30px;
   height: 39px;
   margin-bottom: 30px;
+  color: $htwGruen;
 }
 .checkbox {
   margin-bottom: 10px;
@@ -221,7 +222,7 @@ label {
 
 h1,
 h2 {
-  color: $htwGruen;
+  color: black;
 }
 
 h2 {
@@ -256,13 +257,15 @@ input:focus {
 button,
 input[type="submit"] {
   background: none;
-  color: $htwGruen;
+  color: black;
+  text-decoration: underline 2px;
+  text-decoration-color: $htwGruen ;
+  text-underline-offset: 4px ;
   border: none;
   padding: 0;
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  text-decoration: underline;
   font-weight: bold;
   font-size: 18px;
   margin-top: 20px;
@@ -270,7 +273,7 @@ input[type="submit"] {
 }
 
 .disabled {
-  color: grey;
+  color: black;
   text-decoration: none;
   cursor: auto;
 }
@@ -298,7 +301,7 @@ input[type="submit"] {
 
 .login-link {
   display: block;
-  color: $htwGruen;
+  color: black;
   font-size: 15px;
 }
 

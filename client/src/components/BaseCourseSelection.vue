@@ -328,6 +328,7 @@ button {
   border-radius: 0.25rem;
   font-weight: 600;
   align-items: center;
+  border: 2px solid $htwGruen;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 .infoButton:hover {
@@ -370,7 +371,7 @@ button {
   //padding-right: 2rem;
   text-align: justify;
   font-size: x-small;
-  color: rgb(34, 34, 34);
+  color: black;
   max-width: 20rem;
 }
 .error-message {
@@ -379,8 +380,8 @@ button {
   margin-top: 0;
 }
 #prioritiesBox {
-  background-color: #b9b9b9;
-  color: white;
+  background-color: $htwGruen;
+  color: black;
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -453,9 +454,9 @@ button {
     margin-left: 1.5rem;
     margin-right: 0.5rem;
     padding: 0.5rem;
-    border: none;
+    border: 2px solid #FF5F01;
     border-radius: 0.25rem;
-    background: rgb(163, 223, 145);
+    background:white;
     font-weight: 600;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
       0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -470,9 +471,9 @@ button {
     margin-bottom: 0.5rem;
     margin-right: 0.5rem;
     padding: 0.5rem;
-    border: none;
+    border: 2px solid #0181D2;
     border-radius: 0.25rem;
-    background: rgb(145, 201, 223);
+    background: white;
     font-weight: 600;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
       0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -499,7 +500,7 @@ button {
 }
 
 .scroll {
-  background-color: #a7a7a7;
+  background-color: #d6d5d5;
   max-height: 30rem;
   overflow-y: auto;
 }

@@ -57,14 +57,21 @@ p {
   .shadowBox {
     box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.23);
     border-radius: 20px;
+    border-left: 1px solid #76b900;
+    border-right: 1px solid #76b900;
   }
   .semester {
     background: white;
     &:nth-child(odd) {
       background: rgba(118, 185, 0, 0.1) !important;
+      border-bottom: 1px solid #76b900;
+    }
+    &:nth-child(even) {
+      border-bottom: 1px solid #76b900;
     }
     &:first-of-type {
       border-radius: 20px 20px 0 0;
+      border-top: 1px solid #76b900;
     }
     &:last-of-type {
       border-radius: 0 0 20px 20px;
@@ -83,7 +90,7 @@ p {
 
   &__text {
     margin: 0;
-    color: $htwGruen;
+    color: black;
   }
 }
 </style>

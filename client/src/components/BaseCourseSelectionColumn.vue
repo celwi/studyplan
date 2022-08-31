@@ -130,7 +130,7 @@ a {
   border-style: solid;
   border-radius: 20px;
   border-width: 0.125rem;
-  border-color: #7c7c7c;
+  border-color: $htwGruen;
   color: black;
   text-align: center;
   margin-bottom: 1rem;

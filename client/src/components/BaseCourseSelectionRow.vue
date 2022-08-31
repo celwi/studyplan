@@ -222,7 +222,7 @@ button {
   cursor: pointer;
 }
 .notEditable {
-  opacity: 0.5;
+  color: black;
 }
 .gridContainer {
   display: inline-grid;
@@ -242,18 +242,17 @@ button {
   width: 12rem;
   place-content: left;
   border-radius: 20px;
-  background: #c4c4c4;
+  background: white;
   color: black;
   text-align: center;
   padding: 0.5rem 0.5rem;
   margin-bottom: 1rem;
-  // border-color: #7c7c7c;
-  // border-style: solid;
-  // border-width: 0.125rem;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  border-color: $htwGruen;
+  border-style: solid;
+  border-width: 0.125rem;
 }
 .gridItem2:hover {
-  background: rgba(224, 223, 223, 0.7);
+  background: rgba(118,185,0, 0.2);
 }
 
 .gridItem2Alt {

@@ -55,12 +55,15 @@ $htwGruen: #76b900;
   font-size: 18px;
   padding: 10px;
   font-weight: bold;
-  color: $htwGruen;
+  color: black;
+  text-decoration: underline 2px;
+  text-decoration-color: $htwGruen ;
+  text-underline-offset: 4px ;
 }
 
 .semesterName {
   font-size: 15px;
-  color: $htwGruen;
+  color: black;
 }
 
 .semesterECTS {

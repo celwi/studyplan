@@ -237,7 +237,10 @@ h3 {
 }
 
 h4 {
-  color: $htwGruen;
+  color: black;
+  text-decoration: underline 2px;
+  text-decoration-color: $htwGruen ;
+  text-underline-offset: 4px ;
 }
 
 .course-details {
@@ -245,18 +248,21 @@ h4 {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 25px;
-    color: $htwGruen;
+    color: black;
   }
 
   &-name {
     margin: 0;
     font-size: 25px;
-    color: $htwGruen;
+    color: black;
+    text-decoration: underline 2px;
+    text-decoration-color: $htwGruen ;
+    text-underline-offset: 4px ;
   }
 
   &-semestername {
     font-size: 20px;
-    color: $htwGruen;
+    color: black;
   }
 
   &-ects {

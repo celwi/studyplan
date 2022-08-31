@@ -14,7 +14,7 @@
   width: 100%;
   height: 50px;
   margin: 0;
-  background-color: rgba(118, 185, 0, 0.46);
+  background-color:#76B900 ;
   display: flex;
   align-items: center;
 }
@@ -25,7 +25,7 @@
 
   .link {
     margin: 10px;
-    color: white;
+    color: black;
     text-decoration: none;
   }
 }

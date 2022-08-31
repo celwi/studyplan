@@ -108,7 +108,7 @@ $htwGruen: #76b900;
   padding: 10px;
   cursor: pointer;
   font-weight: bold;
-  color: $htwGruen;
+  color: black;
   background: transparent;
 }
 
@@ -122,7 +122,7 @@ $htwGruen: #76b900;
   font-size: 30px;
   padding: 10px;
   cursor: pointer;
-  color: $htwGruen;
+  color: black;
   background: transparent;
 }
 </style>

@@ -213,7 +213,7 @@ p {
 
   &-button {
     background: none;
-    color: rgb(127, 127, 127);
+    color: black;
     border: none;
     padding: 0;
     font: inherit;
@@ -269,15 +269,24 @@ p {
       }
 
       .passed {
-        color: $htwGruen;
+        color: black;
+        background-color: rgba(118, 185, 0, 0.45);
+        border: 2px solid $htwGruen;
+        border-radius: 5px;
         display: block;
       }
       .booked {
-        color: rgba(253, 177, 62, 1);
+        color: black;
+        background-color: #ff9e66;
+        border: 2px solid #ff5f01;
+        border-radius: 5px;
         display: block;
       }
       .notBooked {
-        color: rgb(127, 127, 127);
+        color: black;
+        background-color: rgb(228, 225, 225);
+        border: 2px solid rgba(193, 193, 193, 0.3);
+        border-radius: 5px;
         display: block;
       }
     }
@@ -289,7 +298,7 @@ p {
   margin: 20px auto;
   margin-bottom: 20px;
   background: none;
-  color: rgb(127, 127, 127);
+  color: black;
   border: none;
   padding: 0;
   font: inherit;

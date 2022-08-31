@@ -10,7 +10,7 @@ $htwGruen: #76b900;
 h1 {
   font-weight: bold;
   margin-bottom: 20px;
-  color: $htwGruen;
+  color: black;
 }
 .line {
   border-top: 3px solid $htwGruen;

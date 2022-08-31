@@ -165,7 +165,7 @@ $htwGruen: #76b900;
     }
     &--answer {
       text-decoration: underline;
-      color: $htwGruen;
+      color: black;
       font-size: 18px;
     }
   }

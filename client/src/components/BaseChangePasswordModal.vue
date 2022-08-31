@@ -178,7 +178,7 @@ $errorRed: #f8153d;
     margin-top: 0;
   }
   &--success {
-    color: $htwGruen;
+    color: black;
   }
 }
 
@@ -228,20 +228,22 @@ $errorRed: #f8153d;
   .submit,
   input[type="submit"] {
     background: none;
-    color: $htwGruen;
+    color: black;
+    text-decoration: underline 2px;
+    text-decoration-color: $htwGruen ;
+    text-underline-offset: 4px ;
     border: none;
     padding: 0;
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    text-decoration: underline;
     font-weight: bold;
     font-size: 18px;
     margin-top: 20px;
   }
 
   .disabled {
-    color: grey;
+    color: black;
     text-decoration: none;
     cursor: auto;
   }
