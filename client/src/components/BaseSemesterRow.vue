@@ -39,6 +39,7 @@
           >
             <div
               class="course-content-container-content"
+              :aria-label="course.name + ', ' + checkStatus(course)"
               :class="{
                 'course-content-container-content--booked': course.booked,
                 'course-content-container-content--passed': course.passed,
@@ -116,6 +117,16 @@ export default {
         toCourses,
         toCourseIndex,
       });
+    },
+    checkStatus(course){
+      if(course.booked){
+        var result = "Kurs belegt"
+        if(course.passed){
+          result = "Kurs bestanden"
+        }
+      }
+      else{result = "Kurs wurde noch nicht belegt"}
+      return result
     },
   },
 };

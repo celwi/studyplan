@@ -48,11 +48,12 @@
               v-if="currentUser.startOfStudy"
               class="link icon"
               to="/profile"
+              aria-label="Mein Profil"
             >
               <font-awesome-icon :icon="['fas', 'user']" size="1x" />
             </router-link>
 
-            <a class="link logout-desktop" href @click.prevent="logOut">
+            <a class="link logout-desktop" href @click.prevent="logOut" aria-label="Logout">
               <font-awesome-icon
                 class="icon"
                 :icon="['fas', 'sign-out-alt']"

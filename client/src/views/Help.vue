@@ -6,7 +6,7 @@
     <div class="questions">
       <div class="questions questions-question">
         <section id="willkommen">
-          <p class="questions questions-question--text">
+          <p class="questions questions-question--text" role="heading">
             Willkommen bei Studyplan!
           </p>
           <p class="text-content">
@@ -27,13 +27,13 @@
         </section>
       </div>
       <div class="questions questions-question">
-        <p class="questions questions-question--text">
+        <p class="questions questions-question--text" role="heading">
           Hast du Fragen zur Belegung?
         </p>
         <p class="text-content">
           Die Studyplan Kursbelegung besteht aus zwei Phasen.
         </p>
-        <p class="subdivision">Phase 1: Belegungssimulation</p>
+        <p class="subdivision" role="heading">Phase 1: Belegungssimulation</p>
         <p class="text-content">
           Die Phase der Belegungssimulation findet auf der gleichen Webseite wie
           die richtige Belegung statt und ist <b>unverbindlich</b>. Diese
@@ -41,7 +41,7 @@
           zum Anfang der Belegungsphase bereits alle Kapazitäten der zur
           Verfügung stehenden Übungsgruppen ausgeschöpft werden können.
         </p>
-        <p class="subdivision">Phase 2: Belegung</p>
+        <p class="subdivision" role="heading">Phase 2: Belegung</p>
         <p class="text-content">
           Die zweite Phase ist nun eine verbindliche Kursbelegung und die
           <a
@@ -62,7 +62,7 @@
       </div>
       <div class="questions questions-question">
         <section id="prio">
-          <p class="questions questions-question--text">
+          <p class="questions questions-question--text" role="heading">
             Wie funktioniert die Kursbelegungs Priorität?
           </p>
           <p class="text-content">
@@ -85,7 +85,7 @@
         </section>
       </div>
       <div class="questions questions-question">
-        <p class="questions questions-question--text">
+        <p class="questions questions-question--text" role="heading">
           Bist du dir unsicher und möchtest nochmal selbst in der Studienordnung
           nachlesen?
         </p>
@@ -97,7 +97,7 @@
         >
       </div>
       <div class="questions questions-question">
-        <p class="questions questions-question--text">
+        <p class="questions questions-question--text" role="heading">
           Möchtest du dich lieber persönlich beraten lassen?
         </p>
         <a
@@ -108,7 +108,7 @@
         >
       </div>
       <div class="questions questions-question">
-        <p class="questions questions-question--text">
+        <p class="questions questions-question--text" role="heading">
           Brauchst du Hilfe mit dem Tool selbst?
         </p>
         <a

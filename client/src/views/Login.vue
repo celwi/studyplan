@@ -11,6 +11,8 @@
           v-model="username"
           type="text"
           name="username"
+          placeholder="s0******@htw-berlin.de"
+          aria-label="Füge deine HTW-Email Adresse oder deinen Benutzernamen ein, zum Beispiel: "
           :class="{ error: v$.username.$error }"
           @blur="v$.username.$touch()"
         />
