@@ -15,6 +15,7 @@
 export default({
   setup() {
     document.title = 'StudyPlan';
+    document.documentElement.setAttribute('lang', 'de')
     //const favicon = document.getElementById("favicon");      
     //favicon.href = "https://www.google.com/favicon.ico";
   },

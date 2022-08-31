@@ -6,7 +6,7 @@
     <div class="questions">
       <div class="questions questions-question">
         <section id="willkommen">
-          <p class="questions questions-question--text" role="heading">
+          <p class="questions questions-question--text" role="heading" aria-level="2">
             Willkommen bei Studyplan!
           </p>
           <p class="text-content">
@@ -26,14 +26,23 @@
           </p>
         </section>
       </div>
+      <div class="questions quetions-question">
+        <p class="questions questions-question--text" role="heading" aria-level="2">
+          Was bedeutet ECTS?
+        </p>
+        <p class="text-content">
+          Die Abkürzung <b>ECTS</b> steht für European Credit Transfer System und entspricht in 
+          dieser Anwendung dem Begriff Leistungspunkte. 30 ECTS entsprechen also 30 Leistungspunkten.
+        </p>
+      </div>
       <div class="questions questions-question">
-        <p class="questions questions-question--text" role="heading">
+        <p class="questions questions-question--text" role="heading" aria-level="2">
           Hast du Fragen zur Belegung?
         </p>
         <p class="text-content">
           Die Studyplan Kursbelegung besteht aus zwei Phasen.
         </p>
-        <p class="subdivision" role="heading">Phase 1: Belegungssimulation</p>
+        <p class="subdivision" role="heading" aria-level="3">Phase 1: Belegungssimulation</p>
         <p class="text-content">
           Die Phase der Belegungssimulation findet auf der gleichen Webseite wie
           die richtige Belegung statt und ist <b>unverbindlich</b>. Diese
@@ -41,7 +50,7 @@
           zum Anfang der Belegungsphase bereits alle Kapazitäten der zur
           Verfügung stehenden Übungsgruppen ausgeschöpft werden können.
         </p>
-        <p class="subdivision" role="heading">Phase 2: Belegung</p>
+        <p class="subdivision" role="heading" aria-level="3">Phase 2: Belegung</p>
         <p class="text-content">
           Die zweite Phase ist nun eine verbindliche Kursbelegung und die
           <a
@@ -62,7 +71,7 @@
       </div>
       <div class="questions questions-question">
         <section id="prio">
-          <p class="questions questions-question--text" role="heading">
+          <p class="questions questions-question--text" role="heading" aria-level="2">
             Wie funktioniert die Kursbelegungs Priorität?
           </p>
           <p class="text-content">
@@ -85,7 +94,7 @@
         </section>
       </div>
       <div class="questions questions-question">
-        <p class="questions questions-question--text" role="heading">
+        <p class="questions questions-question--text" role="heading" aria-level="2">
           Bist du dir unsicher und möchtest nochmal selbst in der Studienordnung
           nachlesen?
         </p>
@@ -97,7 +106,7 @@
         >
       </div>
       <div class="questions questions-question">
-        <p class="questions questions-question--text" role="heading">
+        <p class="questions questions-question--text" role="heading" aria-level="2">
           Möchtest du dich lieber persönlich beraten lassen?
         </p>
         <a
@@ -108,7 +117,7 @@
         >
       </div>
       <div class="questions questions-question">
-        <p class="questions questions-question--text" role="heading">
+        <p class="questions questions-question--text" role="heading" aria-level="2">
           Brauchst du Hilfe mit dem Tool selbst?
         </p>
         <a
