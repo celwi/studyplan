@@ -1,6 +1,7 @@
 # Studyplan
 ### A MEVN-based Tool for HTW IMI students to plan their studies and choose optional modules.
 
+Accessability Refactoring done as part of the Bachelors-Thesis of [Celine Wiese](https://github.com/celwi).
 
 Developed as [HTW IMI-Project](https://imi-bachelor.htw-berlin.de/showtime/) (WiSe21/22).
 
