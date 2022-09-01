@@ -145,7 +145,7 @@ module.exports = {
           return;
         }
         if (!user) {
-          return res.status(404).send({ message: "Nutzer nicht gefunden!" });
+          return res.status(404).send({ message: "Nutzer nicht gefunden! Hast du deine E-Mail Adresse korrekt eingegeben? Beispiel: s0******@htw-berlin.de" });
         }
 
         var passwordIsValid = bcrypt.compareSync(

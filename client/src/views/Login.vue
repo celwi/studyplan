@@ -6,14 +6,20 @@
     <div class="line"></div>
     <form name="form" @submit.prevent="handleLogin">
       <div>
+        <div v-if="message" role="alert" class="error-message">
+          {{ message }}
+        </div>
+      </div>
+      <div>
         <label for="username">Email-Adresse oder Benutzername</label>
         <input
+        id="username"
           v-model="username"
           type="text"
           name="username"
           placeholder="s0******@htw-berlin.de"
           aria-label="Füge deine HTW-Email Adresse oder deinen Benutzernamen ein, zum Beispiel: "
-          :class="{ error: v$.username.$error }"
+          :class="{ 'input--error': !username}"
           @blur="v$.username.$touch()"
         />
 
@@ -30,7 +36,7 @@
           v-model="password"
           type="password"
           name="password"
-          :class="{ error: v$.password.$error }"
+          :class="{ 'input--error': !password }"
           @blur="v$.password.$touch()"
         />
         <div class="checkbox">
@@ -68,11 +74,7 @@
         </router-link>
         <router-view></router-view>
       </div>
-      <div>
-        <div v-if="message" role="alert" class="error-message">
-          {{ message }}
-        </div>
-      </div>
+      
     </form>
   </div>
 </template>
@@ -211,7 +213,8 @@ input[type="text"],
 input[type="password"] {
   font-size: 20px;
   text-align: center;
-  border: 3px solid $htwGruen;
+  border: 3px solid;
+  border-color: $htwGruen;
   border-radius: 12px;
   max-width: 350px;
   width: 80%;
@@ -220,9 +223,6 @@ input[type="password"] {
   margin-bottom: 30px;
 }
 
-input:focus {
-  outline: none;
-}
 
 button,
 input[type="submit"] {
@@ -252,9 +252,11 @@ input[type="submit"] {
   color: $errorRed;
   margin-bottom: 30px;
   margin-top: 0;
+  margin-left:30%;
+  margin-right: 30%;
 }
 
-.error {
+.input--error {
   border-color: $errorRed;
 }
 .register-link {

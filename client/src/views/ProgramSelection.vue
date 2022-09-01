@@ -129,9 +129,10 @@
           >
         </div>
       </div>
-      <button :disabled="v$.$invalid" :class="{ disabled: v$.$invalid }">
+      <button @click="savePopup" :disabled="v$.$invalid" :class="{ disabled: v$.$invalid }">
         <span>Speichern</span>
       </button>
+      <base-dialogue ref="baseDialogue"></base-dialogue>
       <p v-if="v$.$anyError" class="error-message">
         Bitte fülle alle Felder aus.
       </p>
@@ -143,10 +144,12 @@
 import useVuelidate from "@vuelidate/core";
 import { required } from "@vuelidate/validators";
 import { mapState } from "vuex";
+import BaseDialogue from '../components/BaseDialogue.vue'
 
 const isTrue = (val) => {
   return val == true;
 };
+
 
 export default {
   setup() {
@@ -163,6 +166,8 @@ export default {
         { name: "nein", value: false },
       ],
       accept: false,
+      isModalVisible: false,
+      save : false
     };
   },
   validations() {
@@ -184,6 +189,7 @@ export default {
       },
     };
   },
+  components: { BaseDialogue },
   computed: {
     ...mapState("studyplan", ["studyPlan"]),
     semestersNotInFuture: function() {
@@ -203,8 +209,20 @@ export default {
   },
 
   methods: {
-    saveProgramAndStartOfStudy() {
+    async savePopup() {
+    const ok = await this.$refs.baseDialogue.show({
+        title: 'Achtung!',
+        message: 'Möchtest du wirklich speichern? Du kannst deine Daten nach dem Speichern nicht mehr bearbeiten!',
+        okButton: 'Speichern'
+      })
+      if(ok){
+        this.save = true
+        this.saveProgramAndStartOfStudy(this.save)}
+
+    },
+    saveProgramAndStartOfStudy(check) {
       this.v$.$touch();
+     if(check == true){
       if (!this.v$.$invalid) {
         if (
           this.selectedProgram &&
@@ -235,10 +253,11 @@ export default {
               }
             );
         }
-      }
-    },
+      } 
+     }
   },
-};
+},
+}
 </script>
 
 <style lang="scss" scoped>
