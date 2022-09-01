@@ -294,7 +294,7 @@ $errorRed: #f8153d;
 
 #acceptLabel {
   text-align: left;
-  color: $htwGruen;
+  color: black;
 }
 
 #warning {
@@ -317,7 +317,7 @@ $errorRed: #f8153d;
 
 h1,
 h2 {
-  color: $htwGruen;
+  color: black;
 }
 
 h2 {
@@ -333,21 +333,23 @@ h3 {
 button,
 input[type="submit"] {
   background: none;
-  color: $htwGruen;
+  color: black;
   border: none;
   padding: 0;
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  text-decoration: underline;
   font-weight: bold;
   font-size: 18px;
   margin-top: 30px;
   margin-bottom: 20px;
+  text-decoration: underline 2px;
+  text-decoration-color: $htwGruen ;
+  text-underline-offset: 4px ;
 }
 
 .disabled {
-  color: grey;
+  color: black;
   text-decoration: none;
   cursor: auto;
 }
@@ -368,7 +370,7 @@ input[type="submit"] {
     margin: 10px;
   }
   label {
-    color: $htwGruen;
+    color: black;
   }
 
   .select {
